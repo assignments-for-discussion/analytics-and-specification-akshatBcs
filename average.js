@@ -5,7 +5,7 @@ function average(numbers) {
 	if(Number.isInteger(numbers)){
     clean += numbers; 
     }
-}
+
 
   
   return clean.reduce((p, c)=> p + c, 0) / clean.length;
