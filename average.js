@@ -1,7 +1,14 @@
 
 function average(numbers) {
-  let noNan = numbers ? numbers :0;
-  return noNan.reduce((p, c)=> p + c, 0) / noNan.length;
+  let clean = [];
+  for(let i=0; i<numbers.length;i++){
+	if(Number.isInteger(numbers)){
+    clean += numbers; 
+    }
+}
+
+  
+  return clean.reduce((p, c)=> p + c, 0) / clean.length;
 }
 
 module.exports = {average};
