@@ -1,6 +1,7 @@
 
 function average(numbers) {
-  return numbers.reduce((p, c)=> p + c || 0, 0) / numbers.length;
+  let noNan = numbers ? numbers :0;
+  return noNan.reduce((p, c)=> p + c, 0) / noNan.length;
 }
 
 module.exports = {average};
